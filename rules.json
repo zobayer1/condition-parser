@@ -1,0 +1,32 @@
+{
+    "rules": [
+        {
+            "cond": {
+                "all": [
+                    "s1.q1.o1",
+                    {
+                        "any": [
+                            "s2.q1.o1",
+                            "s3.q1.o1"
+                        ]
+                    }
+                ]
+            },
+            "payload": "payload 1"
+        },
+        {
+            "cond": {
+                "any": {
+                    "all": "s3.q1.o1"
+                }
+            },
+            "payload": "payload 2"
+        },
+        {
+            "cond": {
+                "val": "s2.q1.o1"
+            },
+            "payload": "payload 3"
+        }
+    ]
+}
